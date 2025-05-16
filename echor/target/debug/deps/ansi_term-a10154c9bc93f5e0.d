@@ -1,0 +1,13 @@
+/workspaces/CommandLineRust/echor/target/debug/deps/libansi_term-a10154c9bc93f5e0.rmeta: /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/ansi.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/style.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/difference.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/display.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/write.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/windows.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/util.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/debug.rs
+
+/workspaces/CommandLineRust/echor/target/debug/deps/ansi_term-a10154c9bc93f5e0.d: /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/ansi.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/style.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/difference.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/display.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/write.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/windows.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/util.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/debug.rs
+
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/lib.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/ansi.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/style.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/difference.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/display.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/write.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/windows.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/util.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ansi_term-0.12.1/src/debug.rs:
