@@ -1,0 +1,12 @@
+/workspaces/CommandLineRust/echor/target/debug/deps/libfloat_cmp-03895e32bf57d1f7.rmeta: /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/macros.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ulps.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ulps_eq.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/eq.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ratio.rs
+
+/workspaces/CommandLineRust/echor/target/debug/deps/libfloat_cmp-03895e32bf57d1f7.rlib: /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/macros.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ulps.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ulps_eq.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/eq.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ratio.rs
+
+/workspaces/CommandLineRust/echor/target/debug/deps/float_cmp-03895e32bf57d1f7.d: /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/lib.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/macros.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ulps.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ulps_eq.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/eq.rs /usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ratio.rs
+
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/lib.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/macros.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ulps.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ulps_eq.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/eq.rs:
+/usr/local/cargo/registry/src/index.crates.io-1949cf8c6b5b557f/float-cmp-0.10.0/src/ratio.rs:
