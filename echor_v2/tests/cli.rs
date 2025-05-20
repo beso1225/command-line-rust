@@ -10,10 +10,10 @@ fn dies_no_args() -> TestResult {
     // cmd.assert()
     //     .failure()
     //     .stderr(predicate::str::contains("Usage"));
-    Command::cargo_bin("echor")?
+    Command::cargo_bin("echor_v2")?
         .assert()
         .failure()
-        .stderr(predicate::str::contains("Usage"));
+        .stderr(predicate::str::contains("USAGE"));
     Ok(())
 }
 
@@ -47,7 +47,7 @@ fn dies_no_args() -> TestResult {
 
 fn run(args: &[&str], expected_file: &str) -> TestResult {
     let expected = fs::read_to_string(expected_file)?;
-    Command::cargo_bin("echor")?
+    Command::cargo_bin("echor_v2")?
         .args(args)
         .assert()
         .success()
