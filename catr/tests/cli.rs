@@ -6,7 +6,7 @@ use std::fs;
 
 type TestResult = Result<(), Box<dyn Error>>;
 
-const PRG: &str = "catr_v2";
+const PRG: &str = "catr";
 const EMPTY: &str = "tests/inputs/empty.txt";
 const FOX: &str = "tests/inputs/fox.txt";
 const SPIDERS: &str = "tests/inputs/spiders.txt";
@@ -19,7 +19,7 @@ fn usage() -> TestResult {
         Command::cargo_bin(PRG)?
             .arg(flag)
             .assert()
-            .stdout(predicate::str::contains("USAGE"));
+            .stdout(predicate::str::contains("Usage"));
     }
     Ok(())
 }
