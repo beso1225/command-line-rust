@@ -1,5 +1,5 @@
 use clap::{App, Arg};
-use std::{error::Error, fs::File, io::{self, BufRead, BufReader}};
+use std::{error::Error, fs::File, io::{self, BufRead, BufReader, Read}};
 
 type MyResult<T> = Result<T, Box<dyn Error>>;
 
@@ -62,10 +62,22 @@ pub fn get_args() -> MyResult<Config> {
 
 pub fn run(config: Config) -> MyResult<()> {
     // println!("{:#?}", config);
-    for filename in config.files {
+    let flag = if config.files.len() > 1 { true } else { false };
+    for (num, filename) in config.files.iter().enumerate() {
         match open(&filename) {
-            Err(err) => eprintln!("{}: {}", filename, err),
-            Ok(_) => println!("Opened file: {}", filename),
+            Err(err) => eprintln!("{}: {}{}", filename, err, "".to_string() + if flag {"\n"} else {""}),
+            Ok(reader) => {
+                if flag {
+                    println!(
+                        "{}==> {} <==",
+                        if num > 0 { "\n" } else { "" },
+                        &filename
+                    );
+                }
+                if let Err(err) = output_lines(reader, config.lines, config.bytes) {
+                    eprintln!("{}: {}", filename, err);
+                }
+            }
         }
     }
     Ok(())
@@ -98,4 +110,48 @@ fn open(filename: &str) -> MyResult<Box<dyn BufRead>> {
         "-" => Ok(Box::new(BufReader::new(io::stdin()))),
         _ => Ok(Box::new(BufReader::new(File::open(filename)?))),
     }
+}
+
+fn output_lines(mut reader: Box<dyn BufRead>, lines: usize, bytes: Option<usize>) -> MyResult<()> {
+    match bytes {
+        Some(b) => {
+            let mut handle = reader.take(b as u64);
+            let mut buffer = vec![0; b];
+            let bytes_read = handle.read(&mut buffer)?;
+            print!(
+                "{}",
+                String::from_utf8_lossy(&buffer[..bytes_read])
+            );
+            // let mut count = 0;
+            // let mut output_bytes = Vec::new();
+            // 'outer_loop: for line in reader.lines() {
+            //     let line = line?;
+            //     let line = line + "\n"; // Ensure we include the newline character
+            //     let line_bytes = line.as_bytes();
+            //     for &byte in line_bytes {
+            //         if count < b {
+            //             output_bytes.push(byte);
+            //             count += 1;
+            //         } else {
+            //             break 'outer_loop;
+            //         }
+            //     }
+            // }
+            // if !output_bytes.is_empty() {
+            //     print!("{}", String::from_utf8_lossy(&output_bytes));
+            // }
+        },
+        None => {
+            let mut line = String::new();
+            for _ in 0..lines {
+                let bytes = reader.read_line(&mut line)?;
+                if bytes == 0 {
+                    break; // EOF
+                }
+                print!("{}", line);
+                line.clear();
+            }
+        }
+    }
+    Ok(())
 }
