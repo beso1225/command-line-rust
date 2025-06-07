@@ -62,12 +62,11 @@ pub fn get_args() -> MyResult<Config> {
 
 pub fn run(config: Config) -> MyResult<()> {
     // println!("{:#?}", config);
-    let flag = if config.files.len() > 1 { true } else { false };
     for (num, filename) in config.files.iter().enumerate() {
-        match open(&filename) {
-            Err(err) => eprintln!("{}: {}{}", filename, err, "".to_string() + if flag {"\n"} else {""}),
+        match open(filename) {
+            Err(err) => eprintln!("{}: {}", filename, err),
             Ok(reader) => {
-                if flag {
+                if config.files.len() > 1 {
                     println!(
                         "{}==> {} <==",
                         if num > 0 { "\n" } else { "" },

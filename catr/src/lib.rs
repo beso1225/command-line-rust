@@ -43,7 +43,7 @@ pub fn run() -> MyResult<()> {
 
 fn print_file(args: &Args) -> MyResult<()> {
     for filename in &args.files {
-        match open(&filename) {
+        match open(filename) {
             Ok(reader) => {
                 let mut counter = 1;
                 for line in reader.lines() {

@@ -117,7 +117,7 @@ fn print_lines_with_numbers_and_nonblank(reader: Box<dyn BufRead>) -> MyResult<(
                     println!("     {}	{}", line_number, line);
                     line_number += 1;
                 } else {
-                    println!("");
+                    println!();
                 }
             }
         }
@@ -126,7 +126,7 @@ fn print_lines_with_numbers_and_nonblank(reader: Box<dyn BufRead>) -> MyResult<(
 }
 
 fn print_one_file(filename: &str, config: &Config) -> MyResult<()> {
-    match open(&filename) {
+    match open(filename) {
         Err(err) => eprintln!("Failed to open {}: {}", filename, err),
         Ok(reader) => {
             if config.number_lines {
